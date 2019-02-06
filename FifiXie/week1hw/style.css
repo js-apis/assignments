@@ -1,0 +1,36 @@
+body {
+	margin: auto;
+	font-family: hypatia-sans-pro, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 18pt;
+	position: absolute;
+	top: 15%;
+	left: 15%;
+	text-indent: 0;
+	background-color: #b99c9e;
+
+}
+
+p {
+	color: #66504d;
+}
+
+#button {
+  background-color: #EDC1B6;
+  border: none;
+  border-radius: 5px;
+  color: black;
+  padding: 9px 9px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-family: hypatia-sans-pro, sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  margin: 4px 4px;
+}
+
+#showQuotes {
+	color: black;
+}
