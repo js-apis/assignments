@@ -1,0 +1,13 @@
+body {
+  background-image: url(./stars.jpg);
+  color: white;
+  font-family: sans-serif;
+}
+#container {
+  width: 95%;
+  margin: 5%;
+}
+.character {
+  padding: 10px;
+  border-bottom: 1px solid white;
+}
