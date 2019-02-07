@@ -1,0 +1,29 @@
+body{
+    font-family: 'Kdam Thmor', cursive;
+    background: url("https://wallpapertag.com/wallpaper/full/7/4/d/146610-large-star-wars-star-background-1920x1080.jpg");
+    margin: 0;
+    background-size: 100%;
+}
+
+.titleContianer{
+    margin-top: 70px;
+    width: 30%;
+    margin-left: 35%;
+    overflow: visible;
+}
+
+.dText{
+    color: white;
+}
+
+.characters-card{
+    display: inline-block;
+    width: 30%;
+    margin-left: 2%;
+    overflow: visible;
+}
+
+#container{
+    width: 90%;
+    margin-left: 5%;
+}
