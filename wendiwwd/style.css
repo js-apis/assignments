@@ -1,0 +1,27 @@
+body {
+  color: antiquewhite;
+  background-color: black;
+  font-family: monospace;
+}
+#container {
+  width: 80%;
+  margin: 10%;
+}
+
+header{
+  padding-top:20px;
+  font-size: 20px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-family: cursive;
+}
+
+.starwar {
+  padding: 10px;
+  border-bottom: 1px solid black;
+
+}
+
+#img{
+    text-align: center;
+}
