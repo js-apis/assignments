@@ -1,0 +1,15 @@
+body {
+	margin: 5% 25% 5% 42%;
+	font-family: hypatia-sans-pro, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+h2 {
+	color:  #b784a7;
+	text-decoration: underline;
+}
+
+p{
+	font-weight: 600;
+}
