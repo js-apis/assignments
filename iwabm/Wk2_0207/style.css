@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'Starwars';
+  src: url('./font/Death Star.otf') format('opentype');
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Tahoma';
+}
+#container {
+  width: 85%;
+  margin: 40px auto 40px auto;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 60px;
+  margin: 0;
+  margin-bottom: 20px;  
+  font-family: "Starwars", "impact";
+}
+
+h3 {
+  font-size: 40px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.character {
+  padding: 20px;
+  height: 300px;
+  border: 1px solid white;
+  border-radius: 10px; 
+  word-wrap: break-word;
+  width: 300px;
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.label {
+  display: inline-block;
+  color: #999999;
+  width: 90px;
+}
