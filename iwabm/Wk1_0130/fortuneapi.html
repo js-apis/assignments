@@ -1,0 +1,42 @@
+<html>
+  <body>
+   <div id="button"><input type="button" onclick="OnButtonClick()" value="Check Today's Fortune"></input><br/></div>
+   <div id="output"></div>
+
+    <script>
+      function OnButtonClick() {
+          target = document.getElementById("output");
+          target.innerHTML = "";
+          target.innerHTML += "<br/>";
+          target.innerHTML += callApi().title;
+          target.innerHTML += "<br/>";
+          target.innerHTML += callApi().body;
+      }
+
+    	function api() {
+    	    var posts = [
+      			{ title: 'Great Fortune', body: 'Today is a beautiful day!' }, 
+      			{ title: 'Normal Fortune', author: 'Alex', body: 'Your fortune is normal today.' },
+      			{ title: 'Bad Fortune', author: 'Sicon', body: 'Take care. Your fortune is not good today.' }
+      		];
+
+          return posts;
+      		
+    	}
+
+      var rand = function(n){
+          return Math.floor(Math.random() * n) + 1;
+      };
+
+    	function callApi() {
+          var posts_list = api();
+          var i = rand(3)-1;
+          console.log(posts_list[i]);
+
+          return posts_list[i];
+
+      }
+    </script>
+ 
+  </body>
+</html>
