@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Hello</title>
+      <link rel="stylesheet" href="style.css">
+      <script src = 'lib/vue.js'></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>    
+    </head>
+    
+    <body>
+        <div id="search-container">
+         <h1> I feel like searching for</h1>    
+          <input id = "input-box" v-on:keyup = "handleKey" 
+                                  v-model="inputValue" type="text" class="search-term" placeholder=""  />
+          <button class="search-btn"> Search </button>      
+        </div>
+        <div id="picture">
+          
+        </div>
+      <script type="text/javascript" src="./main.js"></script>    
+    </body>
+</html>
