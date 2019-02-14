@@ -37,7 +37,7 @@ function buildHTML(data, i) {
   var date = new Date (data.list[i].dt_txt);
   date.setHours(date.getHours() - 5);
   var month = date.getMonth()+1;
-  var day = month + " / " + date.getDate() + ", " + Week[date.getDay()]; // + date.getHours() + "：00";
+  var day = month + " / " + date.getDate() + " " + Week[date.getDay()]; // + date.getHours() + "：00";
   var icon = data.list[i].weather[0].icon;
   var html =
   '<div class="weather-report">' +
