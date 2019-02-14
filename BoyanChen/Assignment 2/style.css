@@ -1,0 +1,38 @@
+body{
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: 2px;
+    background: url("https://wallpapertag.com/wallpaper/full/7/4/d/146610-large-star-wars-star-background-1920x1080.jpg");
+    margin: 0;
+    background-size: 100%;
+}
+
+h3{
+    line-height: 30px;
+}
+.titleContianer{
+    margin-top: 70px;
+    width: 30%;
+    margin-left: 35%;
+    overflow: visible;
+}
+
+.dText{
+    color: white;
+}
+
+.characters-card{
+    width: 100%;
+    /*margin-left: 2%;*/
+    overflow: visible;
+    border: #F7DE55 dashed 3px;
+    /*padding: 20px;*/
+}
+
+#container{
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+    width: 90%;
+    margin-left: 5%;
+}

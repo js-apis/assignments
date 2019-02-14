@@ -1,0 +1,25 @@
+body {
+  color: blue;
+  font-family: helvetica;
+  background-color: black;
+}
+#container {
+  width: 80%;
+  margin: 10%;
+}
+.person {
+  padding: 10px;
+  border-bottom: 3px solid white;
+  border-style: dashed;
+}
+
+h2 {
+	color: white;
+}
+
+h1 {
+	color: white;
+	width: 80%;
+  margin: 10%;
+  font-size: 100px;
+}

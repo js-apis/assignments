@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Righteous|Lato:300,400');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+
+}
+
+#container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 80%;
+    margin: auto;
+    grid-gap: 20px;
+    color: aliceblue;
+    font-family: "Lato";
+}
+
+#container h3{
+    font-size: 22px;
+    font-weight: 400;
+
+}
+
+#container h4{
+    font-size: 14px;
+    font-weight: 300;
+
+}
+
+#container h5{
+    font-size: 14px;
+    font-weight: 300;
+
+}
+
+.card {
+  
+  transition: 0.3s;
+/*  width: 40%;*/
+    padding: 20px;
+    background-color: #202021;
+    border-radius:20px;
+    line-height: inherit;
+}
+
+.card:hover{
+    box-shadow: 0 0px 20px 0 rgba(206, 160, 8,1);
+    
+}
+
+header{
+/*    background-color: aqua;*/
+/*    height: 100px;*/
+    padding: 30px;
+    text-align: center;
+    font-family: "Righteous";
+    font-size: 60px;
+    color:gold;
+}
+
+.profile{
+    width: 100px;
+    float: right;
+    margin-top: -150px;
+}
+ img{
+    border-radius: 5%;
+
+}
+
+footer{
+/*    height: 100px;*/
+    color: gold;
+    font-family: "Lato";
+    margin: 30px;
+    text-align: center;
+}

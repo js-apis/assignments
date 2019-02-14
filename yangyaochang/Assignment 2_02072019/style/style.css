@@ -1,0 +1,17 @@
+body {
+    color: black;
+    font-family: monospace;
+}
+
+.person {
+    padding: 10px;
+    border-bottom: 1px solid; 
+    border-color: rgb(180, 180, 180); 
+    text-align: center;
+    width: 32%;
+    margin: auto;
+
+}
+
+
+
