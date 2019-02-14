@@ -1,0 +1,38 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  color: black;
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", sans-serif;
+  background-image: url("img/ny.jpg");
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
+}
+h1 {
+  font-size: 5rem;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #555555;
+}
+
+#container {
+  width: 100%;
+  margin: 50px;
+}
+
+.weather-report {
+    padding: 0.5em;
+    margin: 0 0.5em 0 0;
+    background-color: rgba(255,255,255, 0.54);
+    border: solid 2px #9e9e9e;/*線*/
+    border-radius: 10px;/*角の丸み*/
+    float: left;
+}
+
+.weather-report img {
+  width: 100%;
+}
+
