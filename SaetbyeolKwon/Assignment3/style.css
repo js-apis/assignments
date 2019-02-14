@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: black;
+  background-image: url('space.jpg');
+  background-attachment: fixed;
+  font-family: Helvetica, Arial, sans-serif;
+  color: white;
+  height: 1624px;
+  /* cursor: url('cursor.png') 0 6,auto; */
+}
+h1{
+  display: inline-block;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+
+
+#view{
+  position: relative;
+  top: 20%;
+}
+img{
+  margin-top: 200px;
+  width: 100%;
+  /* margin-left: 50px; */
+  /* height: 200px; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+}
+
+.people{
+  top: 10px;
+  margin-left: 20%;
+  position: fixed;
+  /* word-spacing: 20px; */
+  letter-spacing: 20px;
+}
+#title{
+  /* margin-left: 30px;
+  margin-right: 30px; */
+  font-size: 50px;
+}
+
+button{
+  position: relative;
+  margin-left: 10%;
+  margin-top: 70%;
+  width: 80px;
+  border: 0;
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: url('cursor.png') 0 6,auto;
+
+  /* position: fixed; */
+}
