@@ -1,3 +1,7 @@
+// - name
+// - height
+// - eye_color
+// - gender
 /* 
   Book cosntructor or `class` 
   Classes start with capital letter by convetion 
@@ -14,11 +18,9 @@ function Person(data) {
   */
   this.name = data.name;
   this.height = data.height;
-  this.skin_color = data.skin_color;
   this.eye_color = data.eye_color;
-  this.birth_year = data.birth_year;
   this.gender = data.gender;
- 
+  
 
   /* 
     Methods: 
@@ -53,31 +55,20 @@ function Person(data) {
     personEl.classList.add('person');
 
     var nameEl = document.createElement('h2');
-    nameEl.innerText = this.name;
+    nameEl.innerText = 'Character Name :' + this.name;
     nameEl.classList.add('name');
 
     var heightEl = document.createElement('p');
-    heightEl.innerText = 'Height: ' + this.height + 'cm';
+    heightEl.innerText = 'Height :' +this.height +'cm';
     heightEl.classList.add('height');
 
-    var skin_colorEl = document.createElement('p');
-    skin_colorEl.innerText ='Skin Color: ' + this.skin_color;
-    skin_colorEl.classList.add('skin_color');
-
     var eye_colorEl = document.createElement('p');
-    eye_colorEl.innerText = 'Eye Color: '+ this.eye_color;
+    eye_colorEl.innerText = 'Eye Color : '+this.eye_color;
     eye_colorEl.classList.add('eye_color');
 
-    var birth_yearEl = document.createElement('p');
-    birth_yearEl.innerText = 'Birth Year: ' + this.birth_year;
-    birth_yearEl.classList.add('birth_year');
-
-    var genderEl = document.createElement('p');
-    genderEl.innerText = 'Gender: '+ this.gender;
+    var genderEl = document.createElement('span');
+    genderEl.innerText = 'Gender : '+this.gender;
     genderEl.classList.add('gender');
-
-
-
     /*
       The following lines attach each element (e.g: titleEl, yearEl, authorEl, ratingEl) to `<div class="book"></div>`
       So after the following line have been executed, our book HTML will look like this:
@@ -93,11 +84,9 @@ function Person(data) {
     */
     personEl.append(nameEl);
     personEl.append(heightEl);
-    personEl.append(skin_colorEl);
     personEl.append(eye_colorEl);
-    personEl.append(birth_yearEl);
     personEl.append(genderEl);
-  
+    
 
     /* 
       And finally, we take the book HTML elements to the container element `<div class="container"></div>`
@@ -133,7 +122,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
   /* 
     We tell our assistant to go and get the `data.json` file.
   */
-  req.open('GET', 'data.json', true);
+  req.open('GET', './data.json', true);
   /* 
     Another good example of Asynchronous code. 
     What we mean is this: Whenever loading `data.json` is complete, run the function we give you.
@@ -151,28 +140,28 @@ document.addEventListener('DOMContentLoaded', function(event) {
       or (in Google Chrome on Mac OS) command + option + j
       To see the messages printed.
     */
-    console.log('Here is all the Star Wars Character data we got from ./data.json: ', data);
+    console.log('Here is all the book data we got from ./data.json: ', data);
     for (var i = 0; i < data.length; i ++) {
       /* 
         `data[i]` is the data for this book. 
       */
-      console.log('We are on Character data number ', i, ' and the Character data is: ', data[i]);
+      console.log('We are on book data number ', i, ' and the book data is: ', data[i]);
       var personData = data[i];
       /* 
         Go ahead and create the `Book` item!
       */
       
-      var persons = new Person(personData);
+      var person = new Person(personData);
 
       /* 
         `push` is a `method` on Arrays (e.g: books Array) that allows us to add an item at the end of an array 
         More about `push`: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push
       */
-      people.push(persons);
+      people.push(person);
       /* 
         Add the `book` we just created to the HTML page!
       */
-      persons.render();
+      person.render();
     }
 
   };
@@ -186,5 +175,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
   req.send(null);
 
 });
+
+
 
 

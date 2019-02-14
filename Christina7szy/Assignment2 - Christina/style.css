@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin');
+.character{
+    background-color: #898989;
+    border-radius: 5px;
+    display: inline-block;
+    padding:10px;
+    margin:10px;
+}
+
+h3{
+    font-family: 'Cabin', sans-serif;
+    color:white;
+}
+
+.picture{
+    display:inline-block;
+    height:100px;
+    width:100%;
+    border-radius: 5px;
+    background-color: #ededed;
+}

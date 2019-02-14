@@ -1,0 +1,33 @@
+
+#Form { 
+	text-align: center; 
+
+}
+#Form input {
+	margin: 0 0 30px 0;
+	padding: 5px 10px 0;
+	width: calc(100% - 20px);
+	height: 50px;
+	color: #8c5d5d;
+	font-family: 'Lato', sans-serif;
+	font-size: 24px;
+	background-color:rgb(203,171,183);
+	border: 0;
+	border-radius: 10px;
+	outline: none;
+}
+#btn {
+	color: #8c5d5d;
+	font-family: 'Lato', sans-serif;
+	font-size:24px;
+	background-color:rgb(203,171,183);
+	border-radius: 10px;
+	border:0;
+	display:inline-block;
+	padding:5px 10px;
+	cursor:pointer;
+}
+#submit:hover {
+	color: #8c5d5d;
+	background:#fff;
+}

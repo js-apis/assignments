@@ -7,7 +7,7 @@
 		"eye_color": "blue",
 		"birth_year": "19BBY",
 		"gender": "male",
-		"homeworld": "https://swapi.co/api/planets/1/", "img":"https://vignette.wikia.nocookie.net/starwars/images/2/20/LukeTLJ.jpg/revision/latest?cb=20170927034529",
+		"homeworld": "https://swapi.co/api/planets/1/",
 		"films": [
 			"https://swapi.co/api/films/2/",
 			"https://swapi.co/api/films/6/",
@@ -40,7 +40,6 @@
 		"birth_year": "112BBY",
 		"gender": "n/a",
 		"homeworld": "https://swapi.co/api/planets/1/",
-        "img":"https://vignette.wikia.nocookie.net/wikis-are-for-nerds/images/7/77/C3PO.png/revision/latest?cb=20171122194948",
 		"films": [
 			"https://swapi.co/api/films/2/",
 			"https://swapi.co/api/films/5/",
@@ -68,7 +67,6 @@
 		"birth_year": "33BBY",
 		"gender": "n/a",
 		"homeworld": "https://swapi.co/api/planets/8/",
-        "img":"https://images-na.ssl-images-amazon.com/images/I/81M0ZN3geQL._SX425_.jpg",
 		"films": [
 			"https://swapi.co/api/films/2/",
 			"https://swapi.co/api/films/5/",
@@ -97,7 +95,6 @@
 		"birth_year": "41.9BBY",
 		"gender": "male",
 		"homeworld": "https://swapi.co/api/planets/1/",
-        "img":"https://images.halloweencostumes.com/products/10008/2-1-99300/authentic-darth-vader-costume-alt14.jpg",
 		"films": [
 			"https://swapi.co/api/films/2/",
 			"https://swapi.co/api/films/6/",
@@ -125,7 +122,6 @@
 		"birth_year": "19BBY",
 		"gender": "female",
 		"homeworld": "https://swapi.co/api/planets/2/",
-        "img":"https://vafloc02.s3.amazonaws.com/isyn/images/f057/img-2009057-f.jpg",
 		"films": [
 			"https://swapi.co/api/films/2/",
 			"https://swapi.co/api/films/6/",
@@ -154,7 +150,6 @@
 		"birth_year": "52BBY",
 		"gender": "male",
 		"homeworld": "https://swapi.co/api/planets/1/",
-        "img":"https://vignette.wikia.nocookie.net/starwars/images/8/81/Owen-OP.jpg/revision/latest?cb=20070626181249",
 		"films": [
 			"https://swapi.co/api/films/5/",
 			"https://swapi.co/api/films/6/",
@@ -179,7 +174,6 @@
 		"birth_year": "47BBY",
 		"gender": "female",
 		"homeworld": "https://swapi.co/api/planets/1/",
-        "img":"https://vignette.wikia.nocookie.net/disney/images/8/84/BeruWhitesunLars.jpg/revision/latest?cb=20121227005055",
 		"films": [
 			"https://swapi.co/api/films/5/",
 			"https://swapi.co/api/films/6/",
@@ -204,7 +198,6 @@
 		"birth_year": "unknown",
 		"gender": "n/a",
 		"homeworld": "https://swapi.co/api/planets/1/",
-        "img":"https://images-na.ssl-images-amazon.com/images/I/51LhTH-U%2BhL.jpg",
 		"films": [
 			"https://swapi.co/api/films/1/"
 		],
@@ -227,7 +220,6 @@
 		"birth_year": "24BBY",
 		"gender": "male",
 		"homeworld": "https://swapi.co/api/planets/1/",
-        "img":"https://vignette.wikia.nocookie.net/swfanon/images/5/57/BiggsDarklighter.jpg/revision/latest?cb=20120324222406",
 		"films": [
 			"https://swapi.co/api/films/1/"
 		],
@@ -252,7 +244,6 @@
 		"birth_year": "57BBY",
 		"gender": "male",
 		"homeworld": "https://swapi.co/api/planets/20/",
-        "img":"https://vignette.wikia.nocookie.net/swfans/images/d/d1/ObiWanKenobi.jpg/revision/latest?cb=20130604153336",
 		"films": [
 			"https://swapi.co/api/films/2/",
 			"https://swapi.co/api/films/5/",
