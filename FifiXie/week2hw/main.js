@@ -88,7 +88,7 @@ function Person(data) {
 
     var urlEl = document.createElement('a');
     urlEl.setAttribute('href', this.url);
-    urlEl.innerHtml = this.url;
+    urlEl.innerHTML = 'URL: ' + this.url;
     urlEl.classList.add('url');
 
 
