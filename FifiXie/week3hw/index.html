@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Memez</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet"> 
+
+
+<!-- 	<script src="memeapi.js"></script> -->
+</head>
+<body>
+
+
+
+ <div id="container">
+      
+      <div class="search-container">
+        <!-- Form to enter search keyword (term) -->
+        <form class="search-form">
+          <input type="text" class="search-term" placeholder="Search Term" />
+          <button class="search-btn">
+            Search
+          </button>
+        </form>
+      </div>
+
+      <!-- A message to show when no results were found. It is hidden by default -->
+      <h3 class="not-found hidden">No memes found :(</h3>
+
+      <!-- We will populate this list from JavaScript -->
+      <ul class="imgList">
+      </ul>
+
+    </div>
+
+
+
+	<script language="javascript" type="text/javascript"  src="p5.js"></script>
+	<script language="javascript" type="text/javascript" src="p5.dom.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
