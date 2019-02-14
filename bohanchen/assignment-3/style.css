@@ -1,0 +1,44 @@
+
+*{
+    background-color: #1c232d;
+    margin: 0;
+    padding: 0;
+    font-family:monospace;
+}
+
+
+header{
+    background-color:bisque;
+    text-align: center;
+}
+
+h1{
+    font-size: 50px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+
+.img_id{
+    width: 90%;
+    margin-left: 5%;
+}
+
+.explaination{
+    column-count: 3;
+    width: 80%;
+    margin: auto;
+    color: white;
+}
+
+p{
+    font-size: 20px;
+}
+
+.title{
+    margin-left: 10%;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 30px;
+}
