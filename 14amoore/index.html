@@ -1,17 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <link rel="stylesheet" type="text/css" href="./style.css">
-  <title>Star Wars Homework</title>
-  <!--Libraries at the top  -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Joke Search Engine</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
 
-  <div id="container">
+    <!-- A `Loading` screen. It's hidden by default -->
+    <div class="loading hidden">
+      Loading articles
+      <span class="loading-term">
+      </span>
+    </div>
 
-  </div>
+    <div id="container">
 
-  <!-- Our own code in the body  -->
-  <script type="text/javascript" src="./main.js"></script>
+      <div class="search-container">
+        <!-- Form to enter search keyword (term) -->
+        <form class="search-form">
+          <input type="text" class="search-term" placeholder="Search Term" />
+          <button class="search-btn">
+            Search
+          </button>
+        </form>
+      </div>
+
+      <!-- A message to show when no results were found. It is hidden by default -->
+      <h3 class="not-found hidden">No articles found</h3>
+
+      <!-- We will populate this list from JavaScript -->
+      <ul class="jokes-list">
+      </ul>
+
+    </div>
+
+    <script src="main2.js"></script>
 </body>
+
+
+
+
+
+
+
+
+
 </html>
