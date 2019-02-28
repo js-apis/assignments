@@ -1,6 +1,6 @@
-var baseURL = 'https://api.airvisual.com/v2/countries?key=';
+var baseURLCountries = 'http://api.airvisual.com/v2/countries?key=';
 var apiKey = 'BP3iQAPQiYht8cWpR';
-var endPointURL = baseURL + apiKey;
+var countriesURL = baseURLCountries + apiKey;
 var result;
 
 function getJSON(path) {
@@ -9,25 +9,26 @@ function getJSON(path) {
   req.responseType = 'json';
   req.onload = function() {
     result = req.response;
+    console.log(result);
   };
   req.send();
 }
 
-// function render() {
-//   var containerEl = document.querySelector('#container');
+function render() {
+  var containerEl = document.querySelector('#container');
   
-//   for(var i = 0; i < result.data.length; i++) {
-//     var placeEl = document.createElement('div');
-//     placeEl.classList.add('place');
+  for(var i = 0; i < result.data.length; i++) {
+    var placeEl = document.createElement('div');
+    placeEl.classList.add('place');
 
-//     var countryEl = document.createElement('h3');
-//     countryEl.innerText = result.data[i];
-//     countryEl.classList.add('country');
+    var countryEl = document.createElement('h3');
+    countryEl.innerText = result.data[i];
+    countryEl.classList.add('country');
 
-//     placeEl.append(countryEl);
-//     containerEl.append(placeEl);
-//   }
-// }
+    placeEl.append(countryEl);
+    containerEl.append(placeEl);
+  }
+}
 
-getJSON(endPointURL);
-// render();
+getJSON(countriesURL);
+render();
