@@ -1,0 +1,5 @@
+# JS API Midterm Proposal
+
+I proposing to make an interactive map of the United States. When an individual State is clicked a list of the ten most recent headlines corresponding to New York Times articles would appear.<br/>
+
+I imagine this project will require me to use React.js.
