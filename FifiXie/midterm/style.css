@@ -1,0 +1,156 @@
+body {	
+	margin: 0%;
+	font-family: hypatia-sans-pro, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 16pt;
+}
+
+.Parent {
+}
+
+.Left {
+	background: #f7cac9;
+	border-style: solid;
+	border-color: #ffe43a;
+	border-width: 10px;
+	position: absolute;
+	width: 50%;
+	height: 200vh;
+
+}
+
+.Right {
+	background: #92A8D1;
+	border-style: solid;
+	border-color: #ffe43a;
+	border-width: 10px;
+	position: absolute;
+	left: 49.5%;
+	width: 49%;
+	height: 200vh;
+
+}
+
+
+.lyrics {
+	margin-left: 5%;
+	width: 90%;
+	text-align: left;
+	display: inline-block;
+}
+
+.search {
+	margin-left: 5%;
+	margin-top: 5%;
+}
+
+.text {
+	margin-top: 5%;
+	margin-left: 7%;
+	width: 95%;
+	text-align: left;
+	display: inline-block;
+}
+
+.mostUsed {
+	margin-left: 7%;
+	width: 95%;
+	text-align: left;
+	display: inline-block;
+}
+
+.title{
+	padding-top: 8px;
+}
+
+#mostUsed0{
+	margin-left: 48%;
+	font-size: 60px;
+	color: balck;
+	line-height: 10px;
+}
+
+#mostUsed1{
+	margin-left: 39%;
+	font-size: 54px;
+	color: #2d1f1b;
+	line-height: 10px;
+}
+
+#mostUsed2{
+	margin-left: 49%;
+	font-size: 49px;
+	color: #44322d;
+	line-height: 10px;
+}
+
+#mostUsed3{
+	margin-left: 32%;
+	font-size: 42px;
+	color: #5e4842;
+	line-height: 10px;	
+}
+
+#mostUsed4{
+	margin-left: 54%;
+	font-size: 39px;
+	color: #705953;
+	line-height: 10px;	
+}
+
+#mostUsed5{
+	margin-left: 42%;
+	font-size: 32px;
+	color: #87706a;
+	line-height: 10px;	
+}
+
+#mostUsed6{
+	margin-left: 36%;
+	font-size: 27px;
+	color: #99837d;
+	line-height: 10px;	
+}
+
+#mostUsed7{
+	margin-left: 54%;
+	font-size: 21px;
+	color: #d3bdb8 ;
+	line-height: 10px;	
+}
+
+#mostUsed8{
+	margin-left: 45%;
+	font-size: 16px;
+	color: #cec1be;	
+	line-height: 10px;	
+}
+
+input {
+	font-family: hypatia-sans-pro, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 12pt;
+	background-color: white;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #ffe43a;
+	padding: 3px;
+	text-align: center;
+}
+
+button {
+	margin-left: 2%;
+	font-family: hypatia-sans-pro, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 12pt;
+	text-align: center;
+	padding: 2px 12px;
+	background-color: #846a7f;
+	border-style: solid;
+	border-width: 3px;
+	border-color: #ad859e;
+	border-radius: 2px;
+}
