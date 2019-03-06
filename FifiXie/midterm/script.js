@@ -45,6 +45,9 @@ var test=[];
 // }
 
 
+//This Function is using a proxy server to call the api,
+//reference found here: https://medium.com/netscape/hacking-it-out-when-cors-wont-let-you-be-great-35f6206cc646 
+
 function getJSON(path, callback) {
    var req = new XMLHttpRequest();
    // req.setRequestHeader(“Origin”, ’www.google.com');
@@ -111,7 +114,7 @@ function getFrequency(string, cutOff) {
   return words.sort(function (a,b) { return frequencies[b] -frequencies[a];}).slice(0,cutOff).toString();
 }
 
-//  	console.log("this is dara");
+//  console.log("this is data");
  // console.log(data); 
 
 
