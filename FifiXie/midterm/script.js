@@ -97,7 +97,7 @@ function printLyrics (lyricsData) {
 
 
 function getFrequency(string, cutOff) {
-	  //console.log(string);
+	  console.log("sending data:",string);
   var cleanString = string.replace(/[\.,-\/#!$%\^&\*;:{}=\-_`~()]/gi,""),
       words = cleanString.split(' '),
       frequencies = {},
@@ -108,8 +108,19 @@ function getFrequency(string, cutOff) {
     frequencies[word] = frequencies[word] || 0;
     frequencies[word]++;
   }
+
+  // frequencies = {
+  // 	"something": 2
+  // 	"somethingelse": 1
+  // }
+  // console.log(frequencies["something"]);
+  // ['something', 'something', 'somethingelse']
+  // word = 'something';
+  // frequencies['something'] = 
   
+  console.log('what the fuck is the difference', words);
   words = Object.keys( frequencies );
+  console.log('all the words', words);
 
   return words.sort(function (a,b) { return frequencies[b] -frequencies[a];}).slice(0,cutOff).toString();
 }
