@@ -1,0 +1,84 @@
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+
+
+
+
+form{
+    border:none;
+    display: inline-block;
+}
+
+#input-box{
+    background-color: transparent;
+    border:none;
+    padding: 5px;
+    width: 90%;
+    height: 100px;
+    font-size:100px;
+    font-family: 'Roboto', sans-serif;
+    border-bottom: 1px solid white
+}
+
+.input-box active{
+    border:none;
+}
+
+.search-btn{
+    border:none;
+    visibility: hidden;
+
+}
+h1{
+   font-family: 'Roboto', sans-serif;
+   font-weight: black;
+   font-size: 100px;
+   color: white;
+   display: inline-block;
+   padding: 5px;
+}
+
+h3{
+   font-family: 'Roboto', sans-serif;
+   font-weight: black;
+   font-size: 5vw;
+   text-align: inherit;
+   color: white;
+   position:relative;
+   bottom:150px;
+   height:100%;
+   display: inline-block;
+   padding-left: 10px;
+   margin:0px;
+}
+#search-container{
+    position: relative;
+  
+}
+body{
+    background-color: rebeccapurple;
+}
+img{
+    width:auto;
+    height:100%;
+    padding:10px;
+    padding-top: 25px;
+    display: inline-block;
+}
+#picture{
+    height:200px;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fade-in{
+    height:100%;
+    padding:15px;
+    animation: fadeIn 1s forwards;
+}
