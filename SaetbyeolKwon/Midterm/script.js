@@ -44,16 +44,30 @@ var map = document.getElementById("map");
           console.log('Number = '+parsed.number);
           console.log('Message = '+parsed.message);
           console.log('How many? = '+Object.keys(parsed.people).length);
-            for(let i=0; i<Object.keys(parsed.people).length; i++){
-              console.log('Name = '+parsed.people[i].name);
-              console.log('Craft = '+parsed.people[i].craft);
-              console.log('Name = '+parsed.people[i].name);
-            }
+          for(let i=0; i<Object.keys(parsed.people).length; i++){
+            console.log('Name = '+parsed.people[i].name);
+            console.log('Craft = '+parsed.people[i].craft);
+          }
+
+          profiles.innerHTML = "<ul><li id = 'profile1'><div id = 'photo1'></div><h3 id = 'name1'> </h3><h3 id = 'craft1'> </h3></li><li id = 'profile2'><div id = 'photo2'></div><h3 id = 'name2'> </h3><h3 id = 'craft2'> </h3></li><li id = 'profile3'><div id = 'photo3'></div><h3 id = 'name3'> </h3><h3 id = 'craft3'></h3></li></ul>"
+
+          let i=0; i<Object.keys(parsed.people).length;
+          name1.innerHTML = 'Name: '+parsed.people[i].name;
+          craft1.innerHTML = 'Craft: '+parsed.people[i].craft;
+          i++;
+          name2.innerHTML = 'Name: '+parsed.people[i].name;
+          craft2.innerHTML = 'Craft: '+parsed.people[i].craft;
+          i++;
+          name3.innerHTML = 'Name: '+parsed.people[i].name;
+          craft3.innerHTML = 'Craft: '+parsed.people[i].craft;
+          i++;
           title.innerHTML = parsed.number;
           // document.body.style.backgroundImage = 'space_station.gif';
           // image.innerHTML = '<embed width="420" height="315"src="http://www.ustream.tv/channel/live-iss-stream/pop-out#to1137912">';
-          image.innerHTML = "<img src = 'astronaut.png' id = 'astronaut'>";
-       
+          image.innerHTML = "<img src = 'astronaut.png'>";
+          photo1.innerHTML = "<img id = 'gif' src = 'space_station.gif'>";
+          photo2.innerHTML = "<img id = 'gif' src = 'astronaut2.gif'>";
+          photo3.innerHTML = "<img id = 'gif' src = 'astronaut3.gif'>";
       } else {
         alert("There was a problem with the request.");
       }
