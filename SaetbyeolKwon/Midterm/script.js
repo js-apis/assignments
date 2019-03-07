@@ -75,46 +75,47 @@ var map = document.getElementById("map");
   }
 })();
 
-(function() {
+//get ISS Time. i don't need it this time.
+// (function() {
  
-  document.getElementById("map").addEventListener("click", makeRequest);
+//   document.getElementById("map").addEventListener("click", makeRequest);
  
-  var httpRequest;
-  function makeRequest() {
+//   var httpRequest;
+//   function makeRequest() {
 
-    baseURL2 = "http://api.open-notify.org/iss-now.json";
-    fullURL2 = baseURL2;
+//     baseURL2 = "http://api.open-notify.org/iss-now.json";
+//     fullURL2 = baseURL2;
 
-    httpRequest = new XMLHttpRequest();
-       if (!httpRequest) {
-      alert("It did not work :(");
-      return false;
-    }
-    httpRequest.onreadystatechange = fillISSTime;
-    httpRequest.open(
-      "GET", fullURL2
-    );
-    httpRequest.send();
-  }
+//     httpRequest = new XMLHttpRequest();
+//        if (!httpRequest) {
+//       alert("It did not work :(");
+//       return false;
+//     }
+//     httpRequest.onreadystatechange = fillISSTime;
+//     httpRequest.open(
+//       "GET", fullURL2
+//     );
+//     httpRequest.send();
+//   }
 
-  function fillISSTime() {
-    var responseContent;
-    if (httpRequest.readyState === XMLHttpRequest.DONE) {
-      if (httpRequest.status === 200) {
-          // console.log(httpRequest.responseText);
-          responseContent = httpRequest.responseText;
-          // console.log(responseContent);
-          var parsed = JSON.parse(responseContent);
-          console.log(parsed);
-          console.log('Timestamp = '+parsed.timestamp);
-          console.log('iss_position latitude = '+parsed.iss_position.latitude);
-          console.log('iss_position longitude = '+parsed.iss_position.longitude);      
-      } else {
-        alert("There was a problem with the request.");
-      }
-    }
-  }
-})();
+//   function fillISSTime() {
+//     var responseContent;
+//     if (httpRequest.readyState === XMLHttpRequest.DONE) {
+//       if (httpRequest.status === 200) {
+//           // console.log(httpRequest.responseText);
+//           responseContent = httpRequest.responseText;
+//           // console.log(responseContent);
+//           var parsed = JSON.parse(responseContent);
+//           console.log(parsed);
+//           console.log('Timestamp = '+parsed.timestamp);
+//           console.log('iss_position latitude = '+parsed.iss_position.latitude);
+//           console.log('iss_position longitude = '+parsed.iss_position.longitude);      
+//       } else {
+//         alert("There was a problem with the request.");
+//       }
+//     }
+//   }
+// })();
 
 var map = L.map('map').setView([0,0], 2);
 

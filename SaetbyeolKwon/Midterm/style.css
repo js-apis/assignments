@@ -57,7 +57,13 @@ li{
 }
 
 #gif{
-  width: 300px;
+  width: 100%;
+}
+
+#gif:hover{
+  width: 105%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #image{
