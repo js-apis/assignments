@@ -6,11 +6,12 @@ var fullURL2;
 var title = document.getElementById("title");
 var image = document.getElementById("image");
 var ajaxButton = document.getElementById("ajaxButton");
+var map = document.getElementById("map");
 
 
 (function() {
  
-  document.getElementById("ajaxButton").addEventListener("click", makeRequest);
+  document.getElementById("map").addEventListener("click", makeRequest);
  
   var httpRequest;
   function makeRequest() {
@@ -51,9 +52,8 @@ var ajaxButton = document.getElementById("ajaxButton");
           title.innerHTML = parsed.number;
           // document.body.style.backgroundImage = 'space_station.gif';
           // image.innerHTML = '<embed width="420" height="315"src="http://www.ustream.tv/channel/live-iss-stream/pop-out#to1137912">';
-          image.innerHTML = "<img src = 'space_station.gif'>";
-    
-          
+          image.innerHTML = "<img src = 'astronaut.png' id = 'astronaut'>";
+       
       } else {
         alert("There was a problem with the request.");
       }
@@ -63,7 +63,7 @@ var ajaxButton = document.getElementById("ajaxButton");
 
 (function() {
  
-  document.getElementById("ajaxButton").addEventListener("click", makeRequest);
+  document.getElementById("map").addEventListener("click", makeRequest);
  
   var httpRequest;
   function makeRequest() {
@@ -102,9 +102,6 @@ var ajaxButton = document.getElementById("ajaxButton");
   }
 })();
 
-/* STOLEN CODE */
-// L is a reference to Leaflet global object `window.L`
-// it draws the map in an element with id `map`
 var map = L.map('map').setView([0,0], 2);
 
 function moveISS () {
@@ -119,22 +116,25 @@ function moveISS () {
     setTimeout(moveISS, 5000); 
 }
 
-L.tileLayer('//open-notify.org/Open-Notify-API/map/tiles/{z}/{x}/{y}.png', {
-    maxZoom: 4,
+L.tileLayer('https://api.mapbox.com/styles/v1/zzsait/cjsy9gwhdfux71fs8zdyudsp3/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoienpzYWl0IiwiYSI6ImNqc3k5Y2QyZTB4ZTc0NHBqb3gzN2MwZTYifQ.d0Hf8PwWkSYbg8bD8LyzdQ', {
+    maxZoom: 5,
+    zoom: 3,
+    id: 'mapbox.streets',
+    accessToken: 'pk.eyJ1IjoienpzYWl0IiwiYSI6ImNqc3k5Y2QyZTB4ZTc0NHBqb3gzN2MwZTYifQ.d0Hf8PwWkSYbg8bD8LyzdQ',
 }).addTo(map);
 
 var ISSIcon = L.icon({
-    iconUrl: '//open-notify.org/Open-Notify-API/map/ISSIcon.png',
-    iconSize: [50, 30],
+    iconUrl: 'iss2011.png',
+    iconSize: [80, 30],
     iconAnchor: [25, 15],
     popupAnchor: [50, 25],
-    shadowUrl: '//open-notify.org/Open-Notify-API/map/ISSIcon_shadow.png',
+    shadowUrl: '',
     shadowSize: [60, 40],
     shadowAnchor: [30, 15]
 });
 
 
 var iss = L.marker([0, 0], {icon: ISSIcon}).addTo(map);
-var isscirc = L.circle([0,0], 2200e3, {color: "#c22", opacity: 0.3, weight:1, fillColor: "#c22", fillOpacity: 0.1}).addTo(map); 
+var isscirc = L.circle([0,0], 2200e3, {color: "lightblue", opacity: 0.3, weight:1, fillColor: "lightblue", fillOpacity: 0.1}).addTo(map); 
 
 moveISS();

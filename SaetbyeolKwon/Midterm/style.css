@@ -1,4 +1,4 @@
-body {
+body{
   margin: 0;
   padding: 0;
   background: black;
@@ -9,19 +9,35 @@ body {
   height: 1624px;
   /* cursor: url('cursor.png') 0 6,auto; */
 }
+
 h1{
-  display: inline-block;
+  /* display: inline-block; */
+  text-align: center;
+  font-size: 50px;
 }
+
 a{
   color: white;
   text-decoration: none;
 }
 
+li{
+  margin-top: 20%;
+  margin-right: 3%;
+  display: inline-block;
+  width: 30%;
+  height: 300px;
+  background-color: black;
+  opacity: 0.5;
+}
 
+
+/*~~~~~~~~~~~~~classes~~~~~~~~~~~~~*/
 #view{
   position: relative;
   top: 20%;
 }
+
 img{
   margin-top: 200px;
   width: 100%;
@@ -34,9 +50,11 @@ img{
 }
 
 .people{
-  top: 10px;
-  margin-left: 20%;
-  position: fixed;
+  padding-top: 15%;
+  width: 100%;
+  height: 30%;
+  margin-left: auto;
+  margin-right: auto;
   /* word-spacing: 20px; */
   letter-spacing: 20px;
 }
@@ -46,7 +64,20 @@ img{
   font-size: 50px;
 }
 
-button{
+#astronaut{
+  margin-top: 30%;
+  z-index: -100;
+  padding-bottom: 20%;
+}
+
+#profiles{
+  display: none;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* button{
   position: relative;
   margin-left: 10%;
   margin-top: 70%;
@@ -57,9 +88,13 @@ button{
   font-size: 20px;
   font-weight: bold;
 
-  /* position: fixed; */
-}
+  /* position: fixed;
+} */
 
 #map{
-  height: 100%;
+  height: 500px;
+  width: 500px;
+  opacity: 0.9;
+  margin-left: auto;
+  margin-right: auto;
 }
