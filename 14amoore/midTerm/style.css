@@ -1,0 +1,56 @@
+/* html, body {
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-family: sans-serif;
+  list-style-type: disc;
+} */
+body {
+  background: url('flag.png');
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+#alert {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  background-color: #ddd;
+  color: #333;
+  padding: 5px;
+  font-weight: bold;
+}
+
+#headlineList {
+  position: relative;
+  width: 80%;
+  margin: 10%;
+  list-style-type: disc;
+}
+.headlines-list {
+  margin-top: 100px;
+  font-weight: 900;
+  font-size: 2em;
+  font-style: bold;
+  font-family: bookman-jf-pro, serif;
+  font-weight: 400;
+  font-style: normal;
+  outline: none;
+  list-style-type: none;
+}
+.hidden {
+  display: none;
+}
+.loading {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding: 10%;
+}
+
+#map {
+  position: absolute;
+  top: 10%;
+  left: 20%;
+}
