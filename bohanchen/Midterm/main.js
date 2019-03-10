@@ -1,6 +1,25 @@
+//news section
+let newsUrl = "https://newsapi.org/v2/top-headlines?country=us&apiKey=3956997889b94373964e8e2d0396bff3"
+
+let newsOutput;
+const Http = new XMLHttpRequest();
+const url=newsUrl;
+Http.open("GET", url);
+Http.responseType = 'json';
+Http.send();
+Http.onreadystatechange=(e)=>{
+    newsOutput = Http.response;
+    let arr = newsOutput.articles;
+    console.log(arr);
+    
+//    var element = document.getElementById("#news")
+//    for (let i = 0; i>arr.length; i++){
+//        createElement("BUTTON")
+//    }
+};
 
 
-
+//for stock graph using d3
 function getStock(){
     
     let apiKey = "XWXP8R16N8GLZ4QB"
@@ -87,7 +106,7 @@ function getStock(){
         
         svg.append("path")
             .data([data])
-            .attr("class", "open")
+            .attr("class", "high")
             .attr("d", line_high)
             .attr("stroke", "#EFDC05")
             .attr("fill", "none")
@@ -115,7 +134,7 @@ function getStock(){
         
         svg.append("path")
             .data([data])
-            .attr("class", "open")
+            .attr("class", "low")
             .attr("d", line_low)
             .attr("stroke", "#58C9B9")
             .attr("fill", "none")
@@ -172,11 +191,50 @@ function getStock(){
 
 
 
-    }).header("Content-Type", "application/json")
-    
-    
-        
+    }).header("Content-Type", "application/csv")  
        
 }
 
 getStock();
+
+
+//button control with jquery
+$(document).ready(function(){
+    $( ".open" ).click(function() {
+        $( ".high" ).toggle( "slow" );
+        $( ".low" ).toggle( "slow" );
+        $( ".close" ).toggle( "slow" );
+    })
+    
+    $( ".close" ).click(function() {
+        $( ".high" ).toggle( "slow" );
+        $( ".low" ).toggle( "slow" );
+        $( ".open" ).toggle( "slow" );
+    })
+    
+    $( ".low" ).click(function() {
+        $( ".high" ).toggle( "slow" );
+        $( ".open" ).toggle( "slow" );
+        $( ".close" ).toggle( "slow" );
+    })
+    
+    $( ".high" ).click(function() {
+        $( ".open" ).toggle( "slow" );
+        $( ".low" ).toggle( "slow" );
+        $( ".close" ).toggle( "slow" );
+    })
+    
+    
+    
+})
+
+
+
+
+
+
+
+
+
+
+
