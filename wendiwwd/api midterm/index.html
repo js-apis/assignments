@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name= "viewport" content="width=device-width,intial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <link rel="stylesheet" type='text/css' href="./style.css">
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Open+Sans" rel="stylesheet">
+    </head>
+<body>
+    
+
+	<div class="container">
+
+        <img src="./images/logo.jpg" width="30%" height="30%" alt="">
+
+<!--            <p> </p>-->
+            
+        <img src="./images/type.gif" width="30%" height="30%" alt="">
+        <div id="movie">
+		<input type="text" id="movieTitle" class="form-control" placeholder="Movie Title">
+
+		<button id="searchMovie" class="btn btn-primary btn-block">Search</button>
+
+		<table class="table table-striped" id="result">
+			<thead>
+				<tr>
+					<th>Title</th>
+					<th>Plot</th>
+					<th>Poster</th>
+				</tr>				
+			</thead>
+			<tbody id="container">
+				<tr id="template">
+					<td><a href="#" class="link"></a></td>
+					<td class="plot"></td>
+					<td><img src="" class="poster"></td>
+
+				</tr>
+			</tbody>
+		</table>
+            </div>
+	</div>
+	
+    
+	<script type="text/javascript" src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="./main.js"></script>
+
+</body>
+</html> 

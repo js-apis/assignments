@@ -16,6 +16,10 @@ h1{
   font-size: 50px;
 }
 
+h3{
+
+}
+
 a{
   color: white;
   text-decoration: none;
@@ -24,11 +28,12 @@ a{
 li{
   margin-top: 20%;
   margin-right: 3%;
+  padding: 20px;
   display: inline-block;
-  width: 30%;
+  width: 26%;
   height: 300px;
-  background-color: black;
-  opacity: 0.5;
+  background-color:rgba(64, 25, 109, 0.5);
+  border: solid rgba(131, 84, 175, 0.776) 0.1mm;
 }
 
 
@@ -38,15 +43,38 @@ li{
   top: 20%;
 }
 
-img{
-  margin-top: 200px;
+#profiles{
+  margin-top: 20%;
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
-  /* margin-left: 50px; */
-  /* height: 200px; */
+}
+
+#photo1, #photo2, #photo3{
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+}
+
+#gif{
+  width: 100%;
+}
+
+#gif:hover{
+  width: 105%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#image{
+  margin-top: 30%;
+  width: 100%;
   display: block;
   margin-left: auto;
   margin-right: auto;
   position: absolute;
+  z-index: -100;
+  padding-bottom: 20%;
 }
 
 .people{
@@ -64,18 +92,11 @@ img{
   font-size: 50px;
 }
 
-#astronaut{
+/* #astronaut{
   margin-top: 30%;
   z-index: -100;
   padding-bottom: 20%;
-}
-
-#profiles{
-  display: none;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
+} */
 
 /* button{
   position: relative;
