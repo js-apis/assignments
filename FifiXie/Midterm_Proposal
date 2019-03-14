@@ -1,0 +1,5 @@
+## Midterm Proposal  
+
+For my midterm I’m planning on using the *Musixmatch* API.  
+Specifically,on their [matcher.lyric](https://developer.musixmatch.com/documentation/api-reference/matcher-lyrics-get) method: using the track name and artist name to receive the lyrics from their database.  
+In addition, based on the lyrics received, I will also render the top nine most used words from that lyrics.

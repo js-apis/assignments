@@ -1,0 +1,47 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>$ Stock $</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <h1>$ Stock $</h1>  
+    </header>
+    <div class="search">
+        <form >
+          <input type="text" placeholder="Search.." name="search">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+    </div>
+    <div class = "description">
+        <p class = "abrev">MSFT <sub>microsoft corporation</sub></p>
+       
+    </div>
+    <div class="button">
+        <button class="open">OPEN</button>
+        <button class="close">CLOSE</button>
+        <button class="low">LOW</button>
+        <button class="high">HIGH</button>
+    </div>
+    
+
+    <div class="graph"></div>
+    
+    
+    <div id = "news">
+        <h2>Related News</h2>
+        
+        
+    </div>
+    
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://d3js.org/d3-request.v1.min.js"></script>
+    <script src="main.js"></script> 
+
+
+
+</body>
+</html>

@@ -1,0 +1,144 @@
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+.fade-in{
+  /* height:100%;
+  padding:15px;
+  animation: fadeIn 5s forwards; */
+}
+
+h1{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  color: white;
+  display: inline-block;
+  padding: 5px;
+  margin-top:5px;
+  text-align:center;
+}
+h2{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  color: rgb(254,231,59);
+  padding: 5px;
+  background-color:white;
+  margin:5px;
+  text-align:center;
+}
+input{
+  background-color: transparent;
+  display:inline-block;
+  border:none;
+  padding: 5px;
+  padding-left:20px;
+  width: 80%;
+  height: 50px;
+  font-size:50px;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(254,231,59);
+  border-bottom: 1px solid white
+}
+
+input:focus, textarea:focus {
+  outline: none;
+}
+.inline{
+  display:inline-block;
+}
+
+.searchBtn{
+  display: inline-block;
+  border-radius: 4px;
+  background-color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  border: none;
+  color: rgb(254,67,155);
+  text-align: center;
+  font-size: 16px;
+  padding: 10px;
+  height:40px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-left: 20px;
+  z-index:1;
+}
+.searchBtnspan {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.searchBtn span:after {
+content: '\00bb';  /* CSS Entities. To use HTML Entities, use &#8594;*/
+position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.searchBtn:hover span {
+  padding-right: 25px;
+}
+.searchBtn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+img{
+  width:150px;
+  height:auto;
+  clip-path: inset-rectangle(from top, from right, from bottom, from left, rounded-x, rounded-y);
+  margin-left: 20px;
+  margin-right: 20px;
+  display:inline-block;
+}
+.artistName{
+  font-size: 24px;
+  display: block;
+  margin-left:20px;
+  margin-right:20px;
+  width:150px;
+  white-space: normal;
+  /* overflow: hidden;
+  text-overflow: ellipsis; */
+ 
+}
+@-webkit-keyframes example {
+  0%   {background-color:yellow; left:0px; top:0px;}
+  /* 25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;} */
+  100% {background-color:yellow; left:0px; top:50px;}
+}
+.signinBtn{
+  display: inline-block;
+  border-radius:0px;
+  background-color: transparent;
+  margin-top:45vh;
+  margin-left:32vw;
+  margin-right:32vw;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color:white;
+  border: none;
+  font-size:40px;
+}
+.signinBtn:hover{
+  box-shadow: inset 0px -25px 0px 0px rgba(254,231,59,80);
+}
+.flexBox{
+
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: flex-start;
+  margin-top:20px;
+  width:100%;
+
+ 
+}
+body{
+  background-color: rgb(254,67,155)
+}
+
