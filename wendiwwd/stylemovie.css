@@ -5,9 +5,14 @@ html,body{
     font-family: 'Playfair Display', serif;
     background-color: #eac225;
     text-decoration: none;
-    color: black;  
-    
+    color: black;    
 }
+
+/*
+html,body{
+    background-image: url(images/keyword.png);
+}
+*/
 
 .container{
 /*    margin: 40%;*/
