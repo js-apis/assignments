@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <style>
+    body{
+        background-color:#fafafa;
+    }
+        
+    h1{
+        font-family:'Times New Roman', Times, serif;
+        color: #333333;
+        font-size: 1.9cm;
+        
+    }
+    h2{
+        
+        float: left;
+        
+    }
+    .row {
+            display: flex;
+        }
+
+    .column {
+            flex: 50%;
+            padding: 10px;
+            margin: 10px;
+        }
+
+    #headlines {
+        margin-top: 10%;
+        margin-left: 10%;
+    }
+    </style>
+</head>
+
+<body onload="main()">
+    <h1 style="text-align:center; margin:25px;">WORLD TRENDS</h1>
+    <p style="text-align:center">Compare the world's trending topics on Twitter with The New York Times article topics:</p>
+    <!-- For Twitter -->
+    <div class="row">
+        <div id="twits" class="column" style="border: 2.5px solid #58b8db">
+            <div style="float:left;">
+                <img src="1.png" alt="twitter logo" width="100">
+            </div>
+            <h2 style = "color: #1dabdd; margin-top: 6%;">From Twitter</h2>
+        </div>
+    <!-- For NY Times -->
+        <div class="column" style="border: 2.5px solid black">
+            <div style="float:left">
+                <img src="2.png" alt="nytimes logo" width="100">
+            </div>
+            <h2 style="margin-top: 7%;">From The New York Times</h2>
+            <div id="headlines" style="display:inline-block">
+                <!-- Our NY Times Data -->
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="https://d3js.org/d3.v4.js"></script>
+<script type="text/javascript" src="main.js"></script>
+
+</html>
