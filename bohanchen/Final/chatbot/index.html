@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chat Bot</title>
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <div class="split left">
+            <div class="messages"></div>
+            <div id="edge"></div>
+
+            <form class="actions">
+                <input type="text" placeholder="press 'Enter to send">
+            </form>
+
+    </div>
+    
+    <div class="split right">
+            <div class="graph-1">
+               <h1>MSFT</h1>
+               <h2>Microsoft Cop</h2>
+               <p class='stock-price'></p>
+                
+            </div>
+            
+            <div class="graph-2">
+                <h1>Air Quality in Beijing</h1>
+                <p class='air-quality'></p>
+            </div>
+            
+            <div class="graph-3">
+                <h1>Current Weahter in New York</h1>
+                <div class="icon"></div>
+                <p class="weather"></p>
+                
+                <p class='temperature'></p>
+                <p class='wind'></p>
+            </div>
+            
+    </div>
+
+    <script src="https://unpkg.com/rivescript@latest/dist/rivescript.min.js"></script>
+    <script src="js/brain.js"></script>
+    <script src="https://d3js.org/d3.v5.js"></script>
+    <script src="https://d3js.org/d3-request.v1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script src="js/stock.js"></script>
+    <script src="js/airquality.js"></script>
+    <script src="js/weather.js"></script>
+
+</body></html>

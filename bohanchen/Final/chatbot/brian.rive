@@ -1,0 +1,45 @@
+! version = 2.0
+
++ hello
+- hello, what is your name?
+
++ hi
+- hi, what is your name?
+
++ my name is *
+- nice to meet you <star>
+- nice meeting you <star>
+
++ i am *
+- nice to meet you <star>
+- nice meeting you <star>
+
++ thank you
+- you are welcome
+- welcome
+- no problem
+- no worries
+
++ can you fail the turing test
+- No, failure is not an option.
+
++ *
+- Sorry did not get what you said
+- I am afraid that i can not understand you
+- I did not get it
+- Sorry can you please elaborate that for me
+
++ what is the stock price
+- What is stock are you looking for?
+
++ microsoft
+- Ok, here is the stock price for microsoft
+
++ what is the air quality
+- which city you are looking for?
+
++ beijing
+-Ok, here is the air quality in Beijing
+
++ what is the weather
+- the current weather is listed on the right
