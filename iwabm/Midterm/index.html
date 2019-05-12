@@ -1,0 +1,39 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="bg-mask">
+    <div id="container">
+      <h1 class="city"></h1>
+      <h2 class="time"></h2>
+      <div class = "date_display">
+        <h3 class="today">Today</h3>
+        <h3 class="tomorrow">Tomorrow</h3>
+      </div>
+      <div class="clear"></div>
+      <div class="weather">
+        <div class="w_today"></div>
+        <div class="w_tomorrow"></div>
+      </div>
+      <div class="clear"></div>
+      <img id="play" src="img/play.png" onclick="imgPressed();changeimg();">
+      <div class="btn-group">
+        <input class ="btn" type="button" value="Tokyo" onclick="getTokyo_Weather();getTokyo_Image();getTokyo_Time();startTimer_Tokyo();stopTimer_NY();"/>
+        <input class ="btn" type="button" value="New York" onclick="getNY_Weather();getNY_Image();getNY_Time();startTimer_NY();stopTimer_Tokyo();"/>
+      </div>
+    </div>
+  </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.js"></script>
+    <script language="javascript" type="text/javascript" src="p5.sound.js"></script>
+    <script src="moment.js"></script>
+    <script src="moment-timezone.js"></script>
+    <script src="weather.js"></script>
+    <!-- <script src="unsplash.js"></script> -->
+    <!-- <script src="sound.js"></script> -->
+</body>
+</html>

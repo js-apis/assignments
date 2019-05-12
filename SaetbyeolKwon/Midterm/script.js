@@ -62,8 +62,6 @@ var map = document.getElementById("map");
           craft3.innerHTML = 'Craft: '+parsed.people[i].craft;
           i++;
           title.innerHTML = parsed.number;
-          // document.body.style.backgroundImage = 'space_station.gif';
-          // image.innerHTML = '<embed width="420" height="315"src="http://www.ustream.tv/channel/live-iss-stream/pop-out#to1137912">';
           image.innerHTML = "<img src = 'astronaut.png'>";
           photo1.innerHTML = "<img id = 'gif' src = 'space_station.gif'>";
           photo2.innerHTML = "<img id = 'gif' src = 'astronaut2.gif'>";
@@ -139,7 +137,7 @@ L.tileLayer('https://api.mapbox.com/styles/v1/zzsait/cjsy9gwhdfux71fs8zdyudsp3/t
 }).addTo(map);
 
 var ISSIcon = L.icon({
-    iconUrl: 'iss2011.png',
+    iconUrl: 'iss2011white.png',
     iconSize: [80, 30],
     iconAnchor: [25, 15],
     popupAnchor: [50, 25],

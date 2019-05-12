@@ -1,0 +1,22 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:300|Lora:400,400italic,700,700italic);
+
+body {
+  background-color: white;
+  font-family: 'Roboto Mono', light;
+  text-align: center;
+
+}
+
+
+#imageContainer {
+  max-width: 500px;
+  margin: 0px auto;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#imageContainer div img {
+  width: 80%;
+  height: 80%;
+}

@@ -1,0 +1,124 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  color: black;
+  width: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Segoe UI", sans-serif;
+  /* background-image: url("img/ny.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+
+h1 {
+  font-size: 5rem;
+  margin-top: 0;
+  color: white;
+}
+
+h2 {
+  font-size: 2.5rem;
+  color: white;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+p {
+  font-size: 1.2rem;
+  color: #555555;
+}
+
+img .play {
+  width: 64px;
+}
+
+.bg-mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+#container {
+  /* position: absolute;
+  width: 100%; */
+  position: relative;
+  margin: 50px 50px 50px 50px;
+  height: 85vh;
+}
+
+.weather-report {
+    padding: 0.5em;
+    margin: 0 0.3em 0 0;
+    background-color: rgba(255,255,255, 0.54);
+    border: solid 1px #9e9e9e;/*線*/
+    border-radius: 4px;/*角の丸み*/
+    text-align: center;
+    width: 90px;
+    line-height: 1.6;
+    display: inline-block;
+}
+
+.date_display {
+  color: white;
+}
+
+.today {
+  float: left;
+}
+.tomorrow {
+  float: right;
+}
+
+.w_today {
+  float: left;
+  /* display: inline; */
+}
+.w_tomorrow {
+  float: right;
+}
+
+.weather-report img {
+  width: 100%;
+}
+
+.clear {
+  clear: both;
+}
+
+#play {
+  width: 52px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.btn-group {
+  position: absolute;
+  /* text-align: right; */
+  /* display: inline; */
+  right: 0;
+  bottom: 0;
+}
+
+.btn {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 4px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  border: 2px solid #4CAF50; /* Green */
+}
+
+.btn:hover {
+  background-color: #ffffff; /* Green */
+  color: black;
+}
